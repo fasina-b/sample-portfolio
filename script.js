@@ -61,3 +61,41 @@ const scrollUp = () => {
 }
 
 document.addEventListener('scroll', scrollUp)
+
+
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+	event.preventDefault();
+
+	// Get form values
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var message = document.getElementById("message").value;
+
+	// Validate form fields (add more validation if needed)
+	if (name === "" || email === "" || message === "") {
+		alert("Please fill in all fields.");
+		return;
+	}
+
+	// Send form data to the server
+	fetch("send_email.php", {
+		method: "POST",
+		body: JSON.stringify({ name, email, message })
+	})
+	.then(response => response.text())
+	.then(result => {
+		if (result === "success") {
+			alert("Message sent successfully!");
+			// Clear form fields
+			document.getElementById("name").value = "";
+			document.getElementById("email").value = "";
+			document.getElementById("message").value = "";
+		} else {
+			alert("An error occurred. Please try again later.");
+		}
+	});
+});
+
+
+
