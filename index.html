@@ -158,18 +158,24 @@
         </div>
 
         <div class="pt-5 projects__grid" >
-          <div class="project" style="padding: 6rem;">
+          <div class="project" style="padding: 3rem; padding-bottom: 35rem;">
             <h3>Elevator Pitch</h3>
             <p class="project__description">
               <span class="fw-bolder">Elevator Pitch</span>
             </p>
-            <a
-              href="#"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
+            <ul class="project__stack">
+              <div style="text-align:center"> 
+                <button onclick="playPause()">
+                  <span class="btn btn--outline pe-5 ps-5" style="font-size: 20px !important;">Play/Pause</span>
+                </button> 
+                <div class="video-container mt-4">
+                  <img src="./images/background.jpg" alt="Cover Image"  class="cover-image">
+                  <video id="video1" width="420">
+                    <source src="./images/Elevator_pitch.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                  </video>
+                </div>
+              </div>             </ul>
           </div>
          
         </div>

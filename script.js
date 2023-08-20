@@ -97,5 +97,21 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 	});
 });
 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() {
+	var video = document.getElementById("video1");
+	var container = document.querySelector(".video-container");
+
+	if (video.paused) {
+		video.play();
+		container.classList.add("playing");
+	} else {
+		video.pause();
+		container.classList.remove("playing");
+	}
+}
+
+
 
 
