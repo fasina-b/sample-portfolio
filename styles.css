@@ -26,40 +26,6 @@ body {
   background-color: var(--clr-bg);
 }
 
-video {
-  border-radius: 10px; /* Adjust the value to control the roundness */
-}
-
-.video-container {
-  position: relative;
-  width: 420px; /* Adjust the width as needed */
-}
-
-.cover-image {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-video {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-/* Hide the video when the cover image is clicked */
-.video-container.playing video {
-  display: block;
-}
-.video-container.playing .cover-image {
-  display: none;
-}
 
 
 .light {
