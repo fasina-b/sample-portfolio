@@ -55,10 +55,12 @@
 
     <main>
       <!-- About -->
-      <div class="about center">
+      <div class="about center d-inline-grid">
         <div class="row">
-          <div class="col-md-7">
-            <h1>Hello <span class="wave"> 👋</span> </h1>
+          <div class="col-md-7 col-12 w-auto">
+            <div class="d-none d-sm-block d-md-block">
+              <h1>Hello <span class="wave"> 👋</span> </h1>
+            </div>
             <h1> <span class="about__name" style="font-size: 55px !important;">I'm Boluwatife Fasina</span> </h1> 
             <h2 class="about__role mt-3">Full-Stack Developer.</h2>
             <h2 class="about__role text-decoration-underline">About</h2>
@@ -69,7 +71,7 @@
             </p>
           </div>
         
-          <div class="col-md-5 fade-in-image">
+          <div class="col-md-5 d-none d-sm-block d-md-block fade-in-image">
             <img src="./images/Profile_Image.jpg" class="profile-image" alt="profile page" 
             style="width: 500px; 
             border-radius: 50%; /* This makes the image round */
@@ -141,10 +143,8 @@
             <p class="project__description">A mobile app that features gamified learning experiences and more into creative education.
             </p> 
             <ul class="project__stack">
-              <img src="./images/Slidedeck.png" style="width: 230px;" class="m-4 pt-3 pb-2"  alt="pichdeck">
-            </ul>
-
-           
+              <img src="./images/Slidedeck.png" style="width: 230px;" class="m-4 pt-3 pb-2 w-100"  alt="pichdeck">
+            </ul>        
             <a
               href="https://docs.google.com/presentation/d/1bjYbDQxQjNUT-0MmHI-o1xYEJxZEUTldW6MtKkulues/edit#slide=id.p14"
               aria-label="live preview"
@@ -154,21 +154,27 @@
             </a>
           </div>
 
-         
-        </div>
+          <div class="project">
+            <h3>Project 3</h3>
 
-        <div class="pt-5 projects__grid" >
-          <div class="project" style="padding: 3rem;">
-            <h3>Elevator Pitch</h3>
-            <p class="project__description">
-              <span class="fw-bolder">Elevator Pitch</span>
+            <p class="project__description fw-bolder pb-2">
+              Elevator Pitch
             </p>
+            <p class="project__description">A fullstack developer with a flare for creating unique designs
+            </p> 
             <ul class="project__stack">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/p2zuz1SjAXg" frameborder="0" allowfullscreen></iframe>
-              </div>             </ul>
+              <iframe class="m-4 pt-3 pb-2 w-100" src="https://www.youtube.com/embed/p2zuz1SjAXg" frameborder="0" allowfullscreen></iframe>
+            </ul>        
+            <a
+              href="https://www.youtube.com/embed/p2zuz1SjAXg"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
           </div>
-         
         </div>
+         
       </section>
 
       <!-- Skills -->

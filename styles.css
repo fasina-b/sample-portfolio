@@ -435,6 +435,8 @@ main {
 
 .skills__list-item {
   margin: 0.5em;
+  color: var(--clr-fg-alt);
+
 }
 
 .contact {
